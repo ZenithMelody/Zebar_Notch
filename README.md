@@ -1,18 +1,15 @@
-# My configs for Zebar and GlazeWM cause I like the Catppuccin colour scheme :D
-
 # GLazeWM Setup
 
-1. Edit the existing .yaml file, found in:
+1. Find the existing .yaml file, found in:
 ```
 ~\.glzr\glazewm
 ```
-
-# Zebar setup:
-- [Zebar](https://github.com/glzr-io/zebar)
-1. Copy [zenith](./zenith) widget to Zebar directory
-
+2. Make these changes to the .yaml file
 ```
-~\.glzr\zebar 
+  # Gap between windows and the screen edge.
+  outer_gap:
+    top: '2px'
+    right: '2px'
+    bottom: '2px'
+    left: '2px'
 ```
-
-2. Follwed by disabling the other widgets in Zebar system tray.
