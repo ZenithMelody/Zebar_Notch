@@ -1,0 +1,110 @@
+/**
+ * Import the Nerdfonts icon font.
+ * Ref https://www.nerdfonts.com/cheat-sheet for a cheatsheet of available Nerdfonts icons.
+ */
+@import 'https://www.nerdfonts.com/assets/css/webfont.css';
+
+i {
+  color: rgb(203 166 247 / 95%);
+}
+
+body {
+  color: rgb(245 194 231 / 90%);
+  font-family: ui-monospace, monospace;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+div,
+span,
+p {
+  cursor: default;
+  user-select: none;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  border-bottom: 1px solid rgb(255 255 255 / 5%);
+  background: linear-gradient(rgb(30 30 46 /90%), rgb(24 24 37 / 85%));
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  height: 100%;
+}
+
+.left,
+.center,
+.right {
+  display: flex;
+  align-items: start;
+}
+
+.left {
+  justify-self: center;
+}
+
+.center {
+  justify-self: center;
+}
+
+.right {
+  justify-self: end;
+}
+
+.tiling-direction {
+  margin-right: 15px;
+}
+
+.logo {
+  background: rgb(203 166 247 / 5%);
+  margin-right: 4px;
+  padding: 4px 8px;
+}
+
+.workspaces {
+  display: flex;
+  align-items: center;
+}
+
+.workspace {
+  background: rgb(203 166 247 / 5%);
+  margin-right: 4px;
+  padding: 4px 8px;
+  color: rgb(245 194 231 / 90%);
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &.displayed {
+    background: rgb(203 166 247 / 15%);
+  }
+
+  &.focused,
+  &:hover {
+    background: rgb(180 190, 254 / 50%);
+  }
+}
+
+.tiling-direction {
+  background: rgb(203 166 247 / 15%);
+  color: rgb(245 194 231 / 90%);
+  border-radius: 2px;
+  line-height: 1;
+  padding: 4px 8px;
+  border: 0;
+  cursor: pointer;
+}
+
+.binding-mode {
+  margin-right: 4px;
+}
+
+
